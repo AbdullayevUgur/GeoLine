@@ -1,0 +1,154 @@
+#about {
+    position: static;
+    padding: 120px 20px;
+    overflow: hidden;
+    /* Градиентный фон с легким затемнением */
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    color: #333;
+}
+
+/* Псевдоэлемент для затемнения фона (эффект оверлея) */
+#about .about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    pointer-events: none;
+}
+
+/* Обертка для контента секции */
+.about-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Верхняя часть секции (заголовок и описание) */
+.about-header {
+    text-align: center;
+    animation: fadeInUp 1s ease-out both;
+}
+
+.about-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+/* Кнопка "Узнать больше" */
+.btn-learn {
+    display: inline-block;
+    background: #007acc;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.btn-learn:hover {
+    background: #005fa3;
+    transform: translateY(-3px);
+}
+
+/* Блок преимуществ */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    animation: fadeInUp 1.2s ease-out both;
+}
+
+/* Отдельный блок преимущества */
+.feature {
+    background: #fff;
+    flex: 1 1 280px;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.feature:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.12);
+}
+
+.feature .icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.feature .icon img {
+    max-width: 60%;
+    max-height: 60%;
+    display: block;
+}
+
+.feature h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #007acc;
+}
+
+.feature p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Анимация плавного появления */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптивность: для узких экранов */
+@media (max-width: 768px) {
+    .about-header h2 {
+        font-size: 36px;
+    }
+    .about-header p {
+        font-size: 18px;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
