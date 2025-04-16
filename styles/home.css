@@ -321,14 +321,12 @@ nav ul li a {
 
 .hero {
     display: flex;
-    height: 757px;
+    height: 100%;
     width: 100%;
     align-items: center;
-    gap: 60px;
-    padding: 80px 167px;
     position: relative;
     background-image: url(img/image3.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: 50% 50%;
 }
 

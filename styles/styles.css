@@ -2,12 +2,13 @@
     max-width: 100%;
     width: 100%;
     padding: 0 15px;
-    box-sizing: border-box; /* İmportant! */
+    box-sizing: border-box; /* Важно! */
 }
 
 img, video, iframe {
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
+    width: auto;
 }
 
 .footer {
