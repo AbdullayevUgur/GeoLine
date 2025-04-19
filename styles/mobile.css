@@ -1,0 +1,462 @@
+/* === Общие настройки === */
+html, body {
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* === Header === */
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-full-dark {
+    height: 50px;
+    width: auto;
+}
+
+/* === Бургер кнопка === */
+.burger {
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #201f53;
+}
+
+/* === Мобильное меню === */
+
+.mobile-menu.open {
+    display: flex;
+}
+
+.language-dropdown {
+    display: none;
+}
+
+.language-dropdown.open {
+    display: block;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mobile-menu nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #201f53;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.mobile-menu nav ul li a:hover {
+    background-color: rgba(32, 31, 83, 0.1);
+}
+
+/* === Языковой переключатель === */
+.language-switcher {
+    margin-top: 10px;
+    position: relative;
+}
+
+.language-current {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #201f53;
+    cursor: pointer;
+}
+
+.language-arrow {
+    transition: transform 0.3s ease;
+}
+
+.language-switcher.active .language-arrow {
+    transform: rotate(180deg);
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    padding: 10px 0;
+    list-style: none;
+    display: none;
+    z-index: 1001;
+}
+
+.language-switcher.active .language-dropdown {
+    display: block;
+}
+
+.language-option {
+    width: 100%;
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    color: #201f53;
+    cursor: pointer;
+}
+
+.language-option:hover {
+    background-color: rgba(32, 31, 83, 0.1);
+}
+
+/* === Hero Section === */
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    background-image: url('img/image3.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #201f53;
+}
+
+.hero .heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero .paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero .button-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero .primary-button,
+.hero .secondary-button {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.hero .primary-button {
+    background-color: #201f53;
+    color: white;
+    border: none;
+}
+
+.hero .secondary-button {
+    background: white;
+    border: 1px solid #201f53;
+    color: #201f53;
+}
+
+/* === Contact Section (мобайл стиль) === */
+#contact {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contact button {
+    padding: 10px;
+    background-color: #007acc;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #005fa3;
+}
+
+@media (max-width: 768px) {
+    #faq {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 30px 15px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    #faq .faq-title {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+        color: #201f53;
+    }
+
+    #faq .faq-item {
+        border-bottom: 1px solid #eee7d6;
+        padding: 15px 0;
+    }
+
+    #faq .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        color: #201f53;
+        transition: color 0.3s;
+    }
+
+    #faq .faq-question:hover {
+        color: #3a3891;
+    }
+
+    #faq .faq-toggle {
+        width: 22px;
+        height: 22px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        transition: transform 0.3s;
+    }
+
+    #faq .faq-toggle::before,
+    #faq .faq-toggle::after {
+        content: '';
+        position: absolute;
+        background-color: #201f53;
+        transition: all 0.3s;
+    }
+
+    #faq .faq-toggle::before {
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    #faq .faq-toggle::after {
+        width: 2px;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+
+    #faq .faq-item.active .faq-toggle {
+        transform: rotate(45deg);
+    }
+
+    #faq .faq-item.active .faq-toggle::before,
+    #faq .faq-item.active .faq-toggle::after {
+        background-color: #3a3891;
+    }
+
+    #faq .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    #faq .faq-item.active .faq-answer {
+        max-height: 300px;
+        padding-top: 12px;
+    }
+}
+
+/* === Адаптив для совсем узких экранов === */
+@media (max-width: 400px) {
+    .hero .heading {
+        font-size: 24px;
+    }
+
+    .hero .paragraph {
+        font-size: 14px;
+    }
+
+    #contact h2 {
+        font-size: 24px;
+    }
+}
+
+/* По умолчанию скрываем мобильный хедер */
+#mobileHeader {
+    display: none;
+}
+
+/* Только на мобайле показываем */
+@media (max-width: 768px) {
+    #mobileHeader {
+        display: block;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+    .header-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .burger {
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        padding: 15px 20px;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    .mobile-menu nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-menu nav ul li {
+        margin-bottom: 12px;
+    }
+
+    .mobile-menu nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .language-switcher {
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .language-current {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .language-dropdown {
+        display: none;
+        position: static;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        margin-top: 5px;
+        border-radius: 5px;
+        padding: 0;
+    }
+
+    .language-switcher.active .language-dropdown {
+        display: block;
+    }
+
+    .language-dropdown li button {
+        width: 100%;
+        text-align: left;
+        background: none;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+/* Скрываем десктопный header на мобильных */
+@media (max-width: 768px) {
+    .header:not(#mobileHeader) {
+        display: none !important;
+    }
+
+    #mobileHeader {
+        display: block !important;
+    }
+}
+
+
