@@ -2,7 +2,6 @@
     position: static;
     padding: 120px 20px;
     overflow: hidden;
-    /* Градиентный фон с легким затемнением */
     background: linear-gradient(135deg, #e0eafc, #cfdef3);
     color: #333;
 }
