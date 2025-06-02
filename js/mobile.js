@@ -1,73 +1,130 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.getElementById("burger");
-    const mobileMenu = document.getElementById("mobileMenu");
-    const languageCurrent = document.querySelector(".language-current");
-    const languageDropdown = document.querySelector(".language-dropdown");
+// ===== MOBILE INTERACTIONS =====
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Бургер-меню
+    const initMobileMenu = () => {
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links a');
 
-    // Открытие/закрытие бургер-меню
-    burger.addEventListener("click", function () {
-        mobileMenu.classList.toggle("open");
-        burger.classList.toggle("open");
+        if (!burger || !navLinks) return;
 
-        // Закрыть языковой переключатель при открытии меню
-        languageDropdown.classList.remove("open");
-        languageCurrent.setAttribute("aria-expanded", "false");
-    });
+        // Анимация бургера и меню
+        burger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            burger.classList.toggle('open');
+            navLinks.classList.toggle('active');
 
-    // Языковой переключатель
-    languageCurrent.addEventListener("click", function (e) {
-        e.stopPropagation();
-        const expanded = languageCurrent.getAttribute("aria-expanded") === "true";
-        languageCurrent.setAttribute("aria-expanded", String(!expanded));
-        languageDropdown.classList.toggle("open");
-    });
-
-    // Клик вне меню/языка — закрытие
-    document.addEventListener("click", function (e) {
-        if (!mobileMenu.contains(e.target) && !burger.contains(e.target)) {
-            mobileMenu.classList.remove("open");
-            burger.classList.remove("open");
-        }
-
-        if (!languageCurrent.contains(e.target)) {
-            languageDropdown.classList.remove("open");
-            languageCurrent.setAttribute("aria-expanded", "false");
-        }
-    });
-
-    // FAQ раскрытие
-    document.querySelectorAll(".faq-question").forEach((question) => {
-        question.addEventListener("click", () => {
-            const item = question.closest(".faq-item");
-            item.classList.toggle("open");
+            // Блокировка скролла при открытом меню
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
         });
-    });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.getElementById("burger");
-    const mobileMenu = document.getElementById("mobileMenu");
-    const languageToggle = document.getElementById("languageToggle");
-    const languageDropdown = document.getElementById("languageDropdown");
+        // Закрытие при клике на ссылку
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                burger.classList.remove('open');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
 
-    // Переключение бургер-меню
-    burger.addEventListener("click", () => {
-        mobileMenu.classList.toggle("open");
-        burger.classList.toggle("open");
-    });
+        // Закрытие при клике вне меню
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target)) {
+                burger.classList.remove('open');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    };
 
-    // Переключение раскрывающегося списка языков
-    languageToggle.addEventListener("click", () => {
-        const expanded = languageToggle.getAttribute("aria-expanded") === "true";
-        languageToggle.setAttribute("aria-expanded", String(!expanded));
-        languageDropdown.classList.toggle("open");
-    });
+    // 2. Плавный скролл для якорных ссылок
+    const initSmoothScroll = () => {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 60, // Учитываем высоту шапки
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    };
 
-    // Закрыть язык при клике вне
-    document.addEventListener("click", (e) => {
-        if (!languageToggle.contains(e.target) && !languageDropdown.contains(e.target)) {
-            languageDropdown.classList.remove("open");
-            languageToggle.setAttribute("aria-expanded", "false");
+    // 3. Интерактивные карточки услуг
+    const initServiceCards = () => {
+        const cards = document.querySelectorAll('.service-card');
+
+        cards.forEach(card => {
+            // Эффект при нажатии
+            card.addEventListener('touchstart', () => {
+                card.style.transform = 'scale(0.98)';
+            });
+
+            card.addEventListener('touchend', () => {
+                card.style.transform = '';
+            });
+        });
+    };
+
+    // 4. Оптимизация формы
+    const initForm = () => {
+        const form = document.querySelector('.contact-form form');
+        if (!form) return;
+
+        // Валидация телефона
+        const phoneInput = form.querySelector('input[type="tel"]');
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function() {
+                this.value = this.value.replace(/[^\d+]/g, '');
+            });
         }
-    });
+
+        // Отправка формы
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = this.querySelector('button[type="submit"]');
+
+            // Имитация отправки
+            submitBtn.textContent = 'Отправка...';
+            submitBtn.disabled = true;
+
+            setTimeout(() => {
+                submitBtn.textContent = 'Отправлено!';
+                this.reset();
+
+                // Возвращаем исходное состояние
+                setTimeout(() => {
+                    submitBtn.textContent = 'Отправить';
+                    submitBtn.disabled = false;
+                }, 2000);
+            }, 1500);
+        });
+    };
+
+    // 5. Оптимизация для touch-устройств
+    const initTouchOptimization = () => {
+        // Увеличиваем зону клика
+        document.querySelectorAll('button, a, input[type="submit"]').forEach(el => {
+            el.style.minHeight = '44px';
+            el.style.minWidth = '44px';
+        });
+    };
+
+    // Инициализация всех функций
+    initMobileMenu();
+    initSmoothScroll();
+    initServiceCards();
+    initForm();
+    initTouchOptimization();
+
+    // 6. Ленивая загрузка изображений (если нужно)
+    if ('loading' in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+            img.src = img.dataset.src;
+        });
+    }
 });
