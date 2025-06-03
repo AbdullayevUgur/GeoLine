@@ -128,3 +128,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Ленивая загрузка всего
+document.addEventListener('DOMContentLoaded', () => {
+    if ('IntersectionObserver' in window) {
+        const lazyItems = document.querySelectorAll('[data-src]');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const elem = entry.target;
+                    elem.src = elem.dataset.src;
+                    observer.unobserve(elem);
+                }
+            });
+        });
+
+        lazyItems.forEach(item => observer.observe(item));
+    }
+});

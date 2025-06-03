@@ -84,3 +84,44 @@
     --paragraph-default-regular-font-style: normal;
 
 }
+
+/* Основные настройки */
+:root {
+    --base-size: 16px; /* База для rem */
+    --scale: 1.2; /* Коэффициент масштабирования */
+    --h1: calc(2.5rem * var(--scale));
+    --h2: calc(2rem * var(--scale));
+    --p: calc(1rem * var(--scale));
+}
+
+@media (max-width: 768px) {
+    :root {
+        --scale: 1; /* Меньший масштаб на мобильных */
+    }
+}
+
+body {
+    font-size: var(--p);
+}
+
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+
+/* Светлая тема по умолчанию */
+:root {
+    --bg: #fff;
+    --text: #333;
+}
+
+/* Темная тема для OLED-экранов */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #1a1a1a;
+        --text: #f0f0f0;
+    }
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
