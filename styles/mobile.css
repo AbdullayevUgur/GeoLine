@@ -1,661 +1,294 @@
-/*!* === Общие настройки === *!*/
-/*html, body {*/
-/*    scroll-behavior: smooth;*/
-/*    width: 100%;*/
-/*    overflow-x: hidden;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    font-family: Arial, sans-serif;*/
-/*}*/
-
-/*!* === Header === *!*/
-/*.header {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    width: 100%;*/
-/*    background-color: #f9f9f9;*/
-/*    padding: 10px 15px;*/
-/*    position: relative;*/
-/*}*/
-
-/*.header-bottom {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.logo-full-dark {*/
-/*    height: 50px;*/
-/*    width: auto;*/
-/*}*/
-
-/*!* === Бургер кнопка === *!*/
-/*.burger {*/
-/*    background: none;*/
-/*    border: none;*/
-/*    font-size: 26px;*/
-/*    cursor: pointer;*/
-/*    color: #201f53;*/
-/*}*/
-
-/*!* === Мобильное меню === *!*/
-
-/*.mobile-menu.open {*/
-/*    display: flex;*/
-/*}*/
-
-/*.language-dropdown {*/
-/*    display: none;*/
-/*}*/
-
-/*.language-dropdown.open {*/
-/*    display: block;*/
-/*}*/
-
-/*.mobile-menu {*/
-/*    display: none;*/
-/*    flex-direction: column;*/
-/*    gap: 15px;*/
-/*    background-color: #fff;*/
-/*    position: absolute;*/
-/*    top: 100%;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    padding: 20px 15px;*/
-/*    box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
-/*    z-index: 1000;*/
-/*}*/
-
-/*.mobile-menu.active {*/
-/*    display: flex;*/
-/*}*/
-
-/*.mobile-menu nav ul {*/
-/*    list-style: none;*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    gap: 12px;*/
-/*}*/
-
-/*.mobile-menu nav ul li a {*/
-/*    text-decoration: none;*/
-/*    font-size: 16px;*/
-/*    color: #201f53;*/
-/*    padding: 10px;*/
-/*    border-radius: 5px;*/
-/*    transition: background 0.2s;*/
-/*}*/
-
-/*.mobile-menu nav ul li a:hover {*/
-/*    background-color: rgba(32, 31, 83, 0.1);*/
-/*}*/
-
-/*!* === Языковой переключатель === *!*/
-/*.language-switcher {*/
-/*    margin-top: 10px;*/
-/*    position: relative;*/
-/*}*/
-
-/*.language-current {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    width: 100%;*/
-/*    background: none;*/
-/*    border: 1px solid #ccc;*/
-/*    padding: 10px;*/
-/*    border-radius: 5px;*/
-/*    font-size: 16px;*/
-/*    color: #201f53;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.language-arrow {*/
-/*    transition: transform 0.3s ease;*/
-/*}*/
-
-/*.language-switcher.active .language-arrow {*/
-/*    transform: rotate(180deg);*/
-/*}*/
-
-/*.language-dropdown {*/
-/*    position: absolute;*/
-/*    top: 100%;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    background: white;*/
-/*    border: 1px solid #ccc;*/
-/*    border-radius: 6px;*/
-/*    margin-top: 5px;*/
-/*    padding: 10px 0;*/
-/*    list-style: none;*/
-/*    display: none;*/
-/*    z-index: 1001;*/
-/*}*/
-
-/*.language-switcher.active .language-dropdown {*/
-/*    display: block;*/
-/*}*/
-
-/*.language-option {*/
-/*    width: 100%;*/
-/*    padding: 8px 16px;*/
-/*    background: none;*/
-/*    border: none;*/
-/*    text-align: left;*/
-/*    font-size: 14px;*/
-/*    color: #201f53;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.language-option:hover {*/
-/*    background-color: rgba(32, 31, 83, 0.1);*/
-/*}*/
-
-/*!* === Hero Section === *!*/
-/*.hero {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    padding: 40px 20px;*/
-/*    background-image: url('img/image3.jpg');*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    text-align: center;*/
-/*    color: #201f53;*/
-/*}*/
-
-/*.hero .heading {*/
-/*    font-size: 28px;*/
-/*    font-weight: bold;*/
-/*    margin-bottom: 10px;*/
-/*}*/
-
-/*.hero .paragraph {*/
-/*    font-size: 16px;*/
-/*    margin-bottom: 20px;*/
-/*}*/
-
-/*.hero .button-row {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    gap: 10px;*/
-/*}*/
-
-/*.hero .primary-button,*/
-/*.hero .secondary-button {*/
-/*    padding: 12px;*/
-/*    border-radius: 6px;*/
-/*    font-size: 16px;*/
-/*    cursor: pointer;*/
-/*    text-align: center;*/
-/*}*/
-
-/*.hero .primary-button {*/
-/*    background-color: #201f53;*/
-/*    color: white;*/
-/*    border: none;*/
-/*}*/
-
-/*.hero .secondary-button {*/
-/*    background: white;*/
-/*    border: 1px solid #201f53;*/
-/*    color: #201f53;*/
-/*}*/
-
-/*!* === Contact Section (мобайл стиль) === *!*/
-/*#contact {*/
-/*    padding: 40px 20px;*/
-/*    background-color: #fff;*/
-/*    text-align: center;*/
-/*}*/
-
-/*#contact h2 {*/
-/*    font-size: 28px;*/
-/*    margin-bottom: 20px;*/
-/*}*/
-
-/*#contact form {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    gap: 15px;*/
-/*}*/
-
-/*#contact input,*/
-/*#contact textarea {*/
-/*    padding: 10px;*/
-/*    font-size: 16px;*/
-/*    border: 1px solid #ccc;*/
-/*    border-radius: 5px;*/
-/*    width: 100%;*/
-/*}*/
-
-/*#contact button {*/
-/*    padding: 10px;*/
-/*    background-color: #007acc;*/
-/*    color: #fff;*/
-/*    font-size: 16px;*/
-/*    border: none;*/
-/*    border-radius: 5px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*#contact button:hover {*/
-/*    background-color: #005fa3;*/
-/*}*/
-
-/*@media (max-width: 768px) {*/
-/*    #faq {*/
-/*        max-width: 100%;*/
-/*        margin: 0 auto;*/
-/*        padding: 30px 15px;*/
-/*        font-family: 'Arial', sans-serif;*/
-/*    }*/
-
-/*    #faq .faq-title {*/
-/*        text-align: center;*/
-/*        font-size: 28px;*/
-/*        margin-bottom: 30px;*/
-/*        color: #201f53;*/
-/*    }*/
-
-/*    #faq .faq-item {*/
-/*        border-bottom: 1px solid #eee7d6;*/
-/*        padding: 15px 0;*/
-/*    }*/
-
-/*    #faq .faq-question {*/
-/*        display: flex;*/
-/*        justify-content: space-between;*/
-/*        align-items: center;*/
-/*        cursor: pointer;*/
-/*        font-size: 16px;*/
-/*        font-weight: 600;*/
-/*        color: #201f53;*/
-/*        transition: color 0.3s;*/
-/*    }*/
-
-/*    #faq .faq-question:hover {*/
-/*        color: #3a3891;*/
-/*    }*/
-
-/*    #faq .faq-toggle {*/
-/*        width: 22px;*/
-/*        height: 22px;*/
-/*        background: none;*/
-/*        border: none;*/
-/*        cursor: pointer;*/
-/*        position: relative;*/
-/*        transition: transform 0.3s;*/
-/*    }*/
-
-/*    #faq .faq-toggle::before,*/
-/*    #faq .faq-toggle::after {*/
-/*        content: '';*/
-/*        position: absolute;*/
-/*        background-color: #201f53;*/
-/*        transition: all 0.3s;*/
-/*    }*/
-
-/*    #faq .faq-toggle::before {*/
-/*        width: 100%;*/
-/*        height: 2px;*/
-/*        top: 50%;*/
-/*        left: 0;*/
-/*        transform: translateY(-50%);*/
-/*    }*/
-
-/*    #faq .faq-toggle::after {*/
-/*        width: 2px;*/
-/*        height: 100%;*/
-/*        left: 50%;*/
-/*        top: 0;*/
-/*        transform: translateX(-50%);*/
-/*    }*/
-
-/*    #faq .faq-item.active .faq-toggle {*/
-/*        transform: rotate(45deg);*/
-/*    }*/
-
-/*    #faq .faq-item.active .faq-toggle::before,*/
-/*    #faq .faq-item.active .faq-toggle::after {*/
-/*        background-color: #3a3891;*/
-/*    }*/
-
-/*    #faq .faq-answer {*/
-/*        max-height: 0;*/
-/*        overflow: hidden;*/
-/*        transition: max-height 0.3s ease-out;*/
-/*        color: #666;*/
-/*        line-height: 1.6;*/
-/*    }*/
-
-/*    #faq .faq-item.active .faq-answer {*/
-/*        max-height: 300px;*/
-/*        padding-top: 12px;*/
-/*    }*/
-/*}*/
-
-/*!* === Адаптив для совсем узких экранов === *!*/
-/*@media (max-width: 400px) {*/
-/*    .hero .heading {*/
-/*        font-size: 24px;*/
-/*    }*/
-
-/*    .hero .paragraph {*/
-/*        font-size: 14px;*/
-/*    }*/
-
-/*    #contact h2 {*/
-/*        font-size: 24px;*/
-/*    }*/
-/*}*/
-
-/*!* По умолчанию скрываем мобильный хедер *!*/
-/*#mobileHeader {*/
-/*    display: none;*/
-/*}*/
-
-/*!* Только на мобайле показываем *!*/
-/*@media (max-width: 768px) {*/
-/*    #mobileHeader {*/
-/*        display: block;*/
-/*        background-color: #fff;*/
-/*        border-bottom: 1px solid #eee;*/
-/*    }*/
-
-/*    .header-bottom {*/
-/*        display: flex;*/
-/*        justify-content: space-between;*/
-/*        align-items: center;*/
-/*        padding: 10px 20px;*/
-/*    }*/
-
-/*    .burger {*/
-/*        font-size: 28px;*/
-/*        background: none;*/
-/*        border: none;*/
-/*        cursor: pointer;*/
-/*    }*/
-
-/*    .mobile-menu {*/
-/*        display: none;*/
-/*        flex-direction: column;*/
-/*        background-color: #f9f9f9;*/
-/*        padding: 15px 20px;*/
-/*    }*/
-
-/*    .mobile-menu.active {*/
-/*        display: flex;*/
-/*    }*/
-
-/*    .mobile-menu nav ul {*/
-/*        list-style: none;*/
-/*        padding: 0;*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    .mobile-menu nav ul li {*/
-/*        margin-bottom: 12px;*/
-/*    }*/
-
-/*    .mobile-menu nav ul li a {*/
-/*        text-decoration: none;*/
-/*        color: #333;*/
-/*        font-size: 16px;*/
-/*    }*/
-
-/*    .language-switcher {*/
-/*        margin-top: 10px;*/
-/*        position: relative;*/
-/*    }*/
-
-/*    .language-current {*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        justify-content: space-between;*/
-/*        width: 100%;*/
-/*        background-color: #fff;*/
-/*        border: 1px solid #ccc;*/
-/*        padding: 10px;*/
-/*        font-size: 16px;*/
-/*        border-radius: 5px;*/
-/*    }*/
-
-/*    .language-dropdown {*/
-/*        display: none;*/
-/*        position: static;*/
-/*        background-color: #fff;*/
-/*        border: 1px solid #ccc;*/
-/*        margin-top: 5px;*/
-/*        border-radius: 5px;*/
-/*        padding: 0;*/
-/*    }*/
-
-/*    .language-switcher.active .language-dropdown {*/
-/*        display: block;*/
-/*    }*/
-
-/*    .language-dropdown li button {*/
-/*        width: 100%;*/
-/*        text-align: left;*/
-/*        background: none;*/
-/*        border: none;*/
-/*        padding: 10px;*/
-/*        font-size: 16px;*/
-/*        cursor: pointer;*/
-/*    }*/
-/*}*/
-
-/*!* Скрываем десктопный header на мобильных *!*/
-/*@media (max-width: 768px) {*/
-/*    .header:not(#mobileHeader) {*/
-/*        display: none !important;*/
-/*    }*/
-
-/*    #mobileHeader {*/
-/*        display: block !important;*/
-/*    }*/
-/*}*/
-
-/* ===== Общие стили для мобильных ===== */
-@media (max-width: 768px) {
-    /* 1. Фиксированная шапка с эффектом стекла */
-    header {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.96);
-        backdrop-filter: blur(8px);
-        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        padding: 12px 0;
+/* ========== Цветовые переменные ========== */
+:root {
+    --color-dark: #0B0C2A;
+    --color-light: #f7f5f1;
+    --color-white: #ffffff;
+    --color-text: #0B0C2A;
+    --color-text-light: #fff;
+    --color-muted: #555;
+}
+
+/* ========== Общие стили ========== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-text);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+section {
+    padding: 20px 16px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+.mobile-header {
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.mobile-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mobile-header .logo img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.burger {
+    width: 24px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.burger span {
+    height: 3px;
+    background-color: var(--color-text-light);
+    border-radius: 2px;
+}
+
+/* Навигация и языки — общее выпадающее меню */
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-dark);
+    padding: 16px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+}
+
+.nav-menu.open {
+    display: flex;
+}
+
+.nav-menu a {
+    color: var(--color-text-light);
+    padding: 8px 0;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+.language-switcher {
+    margin-top: 10px;
+}
+
+.language-switcher select {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--color-light);
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* ========== Hero ========== */
+.hero {
+    margin-top: 70px;
+    background-color: var(--color-light);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 14px;
+    color: #444;
+}
+
+/* ========== Проекты ========== */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.project.dark {
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
+}
+
+.project h2 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.project p {
+    font-size: 14px;
+    color: inherit;
+}
+
+/* ========== FAQ ========== */
+.faq {
+    background-color: var(--color-light);
+}
+
+.faq h2 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.faq-item {
+    border-top: 1px solid #ccc;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 12px 0;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+
+.faq-question::after {
+    content: "\25BC";
+    position: absolute;
+    right: 0;
+    top: 12px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: none;
+    font-size: 14px;
+    padding-bottom: 12px;
+    color: var(--color-muted);
+}
+
+.faq-answer.visible {
+    display: block;
+}
+
+/* ========== Форма обратной связи ========== */
+.contact {
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
+}
+
+.contact h2 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+}
+
+form input:focus-visible,
+form textarea:focus-visible,
+form button:focus-visible {
+    outline: 2px solid var(--color-light);
+}
+
+form textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+form button {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-status {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* ========== Подвал ========== */
+footer {
+    text-align: center;
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
+    padding: 16px;
+}
+
+footer .socials {
+    margin-top: 8px;
+}
+
+footer .socials a {
+    color: var(--color-text-light);
+    margin: 0 6px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* ========== Медиазапросы ========== */
+@media (max-width: 480px) {
+    .mobile-header nav a {
+        font-size: 12px;
     }
 
-    .logo {
-        font-weight: 700;
-        font-size: 1.3rem;
-        color: #2c3e50;
-        margin-left: 15px;
+    .hero h1 {
+        font-size: 18px;
     }
 
-    /* 2. Стильный бургер-меню с анимацией */
-    .burger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 28px;
-        height: 20px;
-        margin-right: 15px;
-        cursor: pointer;
-        z-index: 1001;
-    }
-
-    .burger span {
-        display: block;
-        width: 100%;
-        height: 3px;
-        background: #2c3e50;
-        border-radius: 3px;
-        transition: all 0.3s ease;
-    }
-
-    /* Анимация в "крестик" */
-    .burger.open span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    .burger.open span:nth-child(2) {
-        opacity: 0;
-    }
-    .burger.open span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    /* 3. Выдвижное меню */
-    .nav-links {
-        position: fixed;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        flex-direction: column;
-        align-items: center;
-        transform: translateY(-150%);
-        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-        padding: 20px 0;
-        z-index: 999;
-    }
-
-    .nav-links.active {
-        transform: translateY(0);
-    }
-
-    .nav-links a {
-        width: 100%;
-        text-align: center;
-        padding: 15px 0;
-        font-size: 1.1rem;
-        color: #34495e;
-        border-bottom: 1px solid #f1f1f1;
-        transition: all 0.3s;
-    }
-
-    .nav-links a:hover {
-        background: #f8f9fa;
-        color: #3498db;
-    }
-
-    /* 4. Герой-блок с градиентом */
-    .hero {
-        padding-top: 80px;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('../img/hero-2.jpg') center/cover no-repeat;
-        min-height: 60vh;
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero-text h1 {
-        font-size: 1.8rem;
-        line-height: 1.3;
-        color: white;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-        margin-bottom: 20px;
-    }
-
-    .hero-text p {
-        font-size: 1.1rem;
-        color: rgba(255, 255, 255, 0.9);
-        margin-bottom: 30px;
-    }
-
-    /* 5. Кнопки */
-    .button {
-        display: inline-block;
-        padding: 14px 28px;
-        background: #3498db;
-        color: white;
-        border-radius: 50px;
-        font-weight: 600;
-        text-decoration: none;
-        transition: all 0.3s;
-        box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-    }
-
-    .button:active {
-        transform: translateY(2px);
-        box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
-    }
-
-    /* 6. Карточки услуг с горизонтальным скроллом */
-    .services-container {
-        overflow-x: auto;
-        white-space: nowrap;
-        padding: 20px 0;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .service-card {
-        display: inline-block;
-        width: 85%;
-        max-width: 300px;
-        margin-right: 15px;
-        white-space: normal;
-        vertical-align: top;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-        transition: all 0.3s;
-        padding: 20px;
-    }
-
-    .service-card:active {
-        transform: scale(0.98);
-    }
-
-    /* 7. Адаптивная форма */
-    .contact-form {
-        padding: 30px 15px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        padding: 14px;
-        margin-bottom: 15px;
-        border: 2px solid #e0e0e0;
-        border-radius: 8px;
-        font-size: 1rem;
-        transition: all 0.3s;
-    }
-
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-        border-color: #3498db;
-        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
-        outline: none;
-    }
-
-    /* 8. Футер */
-    footer {
-        text-align: center;
-        padding: 30px 0;
-        background: #2c3e50;
-        color: white;
-    }
-
-    /* 9. Специальные стили для touch-устройств */
-    button, a, input, textarea {
-        min-height: 44px; /* Минимальный размер для тач-элементов */
-    }
-
-    /* 10. Улучшение читаемости текста */
-    body {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #333;
+    .hero p,
+    .project p,
+    .faq-answer,
+    form input,
+    form textarea {
+        font-size: 13px;
     }
 }

@@ -6,14 +6,13 @@
     <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" rel="stylesheet">
     <title>GeoLine</title>
 
-    <link rel="stylesheet" href="styles/styles.css" media="(min-width: 769px)"/>
-    <link rel="stylesheet" href="styles/global.css" media="(min-width: 769px)">
-    <link rel="stylesheet" href="styles/home.css" media="(min-width: 769px)">
-    <link rel="stylesheet" href="styles/styleguide.css" media="(min-width: 769px)">
-    <link rel="stylesheet" href="styles/about.css" media="(min-width: 769px)"/>
-    <link rel="stylesheet" href="styles/services.css" media="(min-width: 769px)"/>
-    <link rel="stylesheet" href="styles/faq.css" media="(min-width: 769px)"/>
-    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/styleguide.css">
+    <link rel="stylesheet" href="styles/about.css"/>
+    <link rel="stylesheet" href="styles/services.css"/>
+    <link rel="stylesheet" href="styles/faq.css"/>
 
     <link rel="alternate" hreflang="az" href="?lang=az">
     <link rel="alternate" hreflang="en" href="?lang=en">
@@ -53,41 +52,6 @@
         </div>
     </div>
 </div>
-
-<!-- Мобильный Header -->
-<div class="header mobile-only" id="mobileHeader">
-    <div class="header-bottom">
-        <img class="logo-full-dark" src="img/logogold.png" alt="Logo" />
-        <button class="burger" id="burger">&#9776;</button>
-    </div>
-
-    <div class="mobile-menu" id="mobileMenu">
-        <nav>
-            <ul>
-                <li><a href="#home" data-translate="home">Home</a></li>
-                <li><a href="#about" data-translate="about">About</a></li>
-                <li><a href="#services" data-translate="services">Services</a></li>
-                <li><a href="#contact-us" data-translate="contact_us">Contact us</a></li>
-                <li><a href="#faq" data-translate="faq">FAQ</a></li>
-            </ul>
-        </nav>
-
-        <div class="language-switcher" id="languageSwitcher">
-            <button class="language-current" id="languageToggle" aria-expanded="false" data-translate="language_switcher">
-                <span>AZ</span>
-                <svg class="language-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                    <path d="M1 1L6 6L11 1" stroke="#201f53" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </button>
-            <ul class="language-dropdown" id="languageDropdown">
-                <li><button class="language-option" data-lang="az" data-translate="az_language">Azərbaycanca (AZ)</button></li>
-                <li><button class="language-option" data-lang="ru" data-translate="ru_language">Русский (RU)</button></li>
-                <li><button class="language-option" data-lang="en" data-translate="en_language">English (EN)</button></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
 
 <section id="home">
     <div class="hero">
@@ -333,6 +297,5 @@
 
 <script src="js/index.js"></script>
 <script src="js/language-switcher.js" defer></script>
-<script src="js/mobile.js"></script>
 </body>
 </html>

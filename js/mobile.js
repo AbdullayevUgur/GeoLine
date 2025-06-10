@@ -147,3 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lazyItems.forEach(item => observer.observe(item));
     }
 });
+
+function toggleLangMenu() {
+    document.querySelector('.language-switcher')?.classList.toggle('open');
+}

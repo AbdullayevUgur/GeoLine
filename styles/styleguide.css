@@ -113,13 +113,7 @@ h2 { font-size: var(--h2); }
     --text: #333;
 }
 
-/* Темная тема для OLED-экранов */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #1a1a1a;
-        --text: #f0f0f0;
-    }
-}
+
 
 body {
     background: var(--bg);
