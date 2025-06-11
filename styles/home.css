@@ -204,34 +204,74 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
-.header .primary-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    padding: 15px 18px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: #201f53;
-    border-radius: 6px;
-    box-shadow: var(--neutral-shadow-02);
+/* Responsive header styles */
+.header {
+    max-height: none;
+    padding:0;
 }
 
-.header .button-text {
-    position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: var(--display-2-semi-bold-font-family);
-    font-weight: var(--display-2-semi-bold-font-weight);
-    color: var(--neutral-colors100);
-    font-size: var(--display-2-semi-bold-font-size);
-    text-align: center;
-    letter-spacing: var(--display-2-semi-bold-letter-spacing);
-    line-height: var(--display-2-semi-bold-line-height);
-    white-space: nowrap;
-    font-style: var(--display-2-semi-bold-font-style);
+.header .header-top,
+.header .header-bottom {
+    padding: 1rem 5vw;
+    flex-direction: row;
 }
 
+.header .logo-full-dark {
+    max-width: 120px;
+    max-height: 80px;
+    width: 20vw;
+    height: auto;
+    left: 0;
+}
+
+.header .header-right,
+.header .header-top-left,
+.header .header-top-right {
+    gap: 2vw;
+}
+
+@media (max-width: 900px) {
+    .header .header-top,
+    .header .header-bottom {
+        padding: 1rem 2vw;
+    }
+    .header .logo-full-dark {
+        max-width: 90px;
+    }
+    .header .header-right,
+    .header .header-top-left,
+    .header .header-top-right {
+        gap: 1vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 0.5rem 0;
+    }
+    .header .header-top,
+    .header .header-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 4vw;
+    }
+    .header .logo-full-dark {
+        max-width: 70px;
+        width: 30vw;
+    }
+    .header .header-right,
+    .header .header-top-left,
+    .header .header-top-right {
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .nav-list {
+        gap: 12px;
+        height: auto;
+    }
+}
 .language-switcher {
     position: relative;
     margin-left: 20px;
@@ -319,6 +359,11 @@ nav ul li a {
     .language-dropdown {
         width: 140px;
     }
+}
+/* In styles/home.css or your main stylesheet */
+#home {
+    padding-top: 100px;
+    box-sizing: border-box;
 }
 
 .hero .grid {
