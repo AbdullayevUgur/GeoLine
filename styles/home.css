@@ -135,7 +135,6 @@ html, body {
     left: 6px;
 }
 
-
 .header .header-bottom {
     display: flex;
     justify-content: space-between;
@@ -209,12 +208,6 @@ nav ul li a {
 .header {
     max-height: none;
     padding:0;
-}
-
-.header .header-top,
-.header .header-bottom {
-    padding: 1rem 5vw;
-    flex-direction: row;
 }
 
 .header .logo-full-dark {
@@ -433,62 +426,6 @@ nav ul li a {
     line-height: var(--display-1-uppercase-semi-bold-line-height);
     white-space: nowrap;
     font-style: var(--display-1-uppercase-semi-bold-font-style);
-}
-
-.hero .button-row {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 16px;
-    position: relative;
-    flex: 0 0 auto;
-}
-
-.hero .primary-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    padding: 14px 18px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: #201f53;
-    border-radius: 6px;
-}
-
-.hero .button-text {
-    position: relative;
-    width: fit-content;
-    font-family: var(--display-2-semi-bold-font-family);
-    font-weight: var(--display-2-semi-bold-font-weight);
-    color: #ffffff;
-    font-size: var(--display-2-semi-bold-font-size);
-    text-align: center;
-    letter-spacing: var(--display-2-semi-bold-letter-spacing);
-    line-height: var(--display-2-semi-bold-line-height);
-    white-space: nowrap;
-    font-style: var(--display-2-semi-bold-font-style);
-}
-
-.hero .line-rounded-arrow {
-    position: relative;
-    width: 12px;
-    height: 12px;
-}
-
-.hero .secondary-button {
-    all: unset;
-    box-sizing: border-box;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    padding: 15px 18px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: #ffffff;
-    border-radius: 6px;
-    border: 1px solid;
-    border-color: #201f53;
 }
 
 .hero .div {
