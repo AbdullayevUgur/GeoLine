@@ -15,7 +15,6 @@
 .about-image {
     flex: 1;
     position: relative;
-    margin-left: -50px;
 }
 
 .image-frame {

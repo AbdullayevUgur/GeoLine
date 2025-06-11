@@ -74,25 +74,76 @@ h1, h2, h3 {
 
 /* Навигация и языки — общее выпадающее меню */
 .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-text-light);
+    padding: 12px 20px;
+    position: relative;
+}
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+.nav-burger {
     display: none;
     flex-direction: column;
-    background-color: var(--color-dark);
-    padding: 16px;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.nav-menu.open {
-    display: flex;
+.nav-burger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: var(--color-text-light);
+    border-radius: 2px;
 }
 
-.nav-menu a {
-    color: var(--color-text-light);
-    padding: 8px 0;
-    text-decoration: none;
-    border-bottom: 1px solid #444;
+@media (max-width: 700px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        right: 0;
+        background: var(--color-dark);
+        flex-direction: column;
+        gap: 0;
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .nav-burger {
+        display: flex;
+    }
 }
 
 .language-switcher {

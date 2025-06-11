@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="styles/about.css"/>
     <link rel="stylesheet" href="styles/services.css"/>
     <link rel="stylesheet" href="styles/faq.css"/>
-
     <link rel="alternate" hreflang="az" href="?lang=az">
     <link rel="alternate" hreflang="en" href="?lang=en">
     <link rel="alternate" hreflang="ru" href="?lang=ru">
@@ -26,12 +25,19 @@
     <div class="header-bottom">
         <img class="logo-full-dark" src="img/logogold.png" />
         <div class="header-right">
-            <div class="burger" onclick="toggleMenu()" title="Menu">
-                <span><li><a href="#home" data-translate="home">Home</a></li></span>
-                <span><li><a href="#about" data-translate="about">About</a></li></span>
-                <span><li><a href="#services" data-translate="services">Services</a></li></span>
-                <span><li><a href="#contact-us" data-translate="contact_us">Contact us</a></li></span>
-            </div>
+            <nav class="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact-us">Contact us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
 
             <div class="language-switcher">
                 <button class="language-current" aria-expanded="false" data-translate="language_switcher">

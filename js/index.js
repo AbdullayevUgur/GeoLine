@@ -82,3 +82,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+const burger = document.querySelector('.nav-burger');
+const links = document.querySelector('.nav-links');
+burger.addEventListener('click', () => {
+    links.classList.toggle('open');
+});
