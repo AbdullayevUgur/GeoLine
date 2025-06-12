@@ -445,3 +445,38 @@ nav ul li a {
     font-style: var(--display-2-semi-bold-font-style);
 }
 
+@media (max-width: 600px) {
+    .header .nav-list {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+        width: 100vw;
+        height: auto;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 0 2vw;
+    }
+    nav ul {
+        flex-direction: row;
+        gap: 4px;
+        width: auto;
+    }
+    nav ul li a {
+        font-size: 13px;
+        padding: 6px 6px;
+        min-width: 60px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .header .header-right {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        width: 100%;
+    }
+}

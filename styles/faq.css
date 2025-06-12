@@ -103,3 +103,16 @@
         font-size: 16px;
     }
 }
+
+@media (max-width: 600px) {
+    .footer-qr {
+        text-align: center;
+        padding: 16px 0;
+    }
+    .footer-qr img {
+        max-width: 120px;
+        width: 80vw;
+        height: auto;
+        display: inline-block;
+    }
+}
