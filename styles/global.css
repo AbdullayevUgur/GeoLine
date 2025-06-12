@@ -81,3 +81,9 @@ section, .about-section, .service-section, .contact-container, faq-section {
     }
 }
 
+@media (min-width: 1024px) {
+    .contact-container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
