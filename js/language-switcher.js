@@ -1,6 +1,7 @@
 class LanguageSwitcher {
     constructor() {
-        this.currentLang = localStorage.getItem('language') || 'en';
+        localStorage.removeItem('language');
+        this.currentLang = 'az';
         this.translations = {};
         this.init();
     }
@@ -123,3 +124,4 @@ document.querySelectorAll('.language-option').forEach(btn => {
         // Optionally update URL or save to localStorage
     });
 });
+

@@ -183,5 +183,30 @@
     "az": "İngilis dili (EN)",
     "ru": "Английский (EN)",
     "en": "English (EN)"
+  },
+  "nav_home": {
+    "az": "Ana səhifə",
+    "ru": "Главная",
+    "en": "Home"
+  },
+  "nav_about": {
+    "az": "Haqqımızda",
+    "ru": "О нас",
+    "en": "About"
+  },
+  "nav_services": {
+    "az": "Xidmətlər",
+    "ru": "Услуги",
+    "en": "Services"
+  },
+  "nav_contact": {
+    "az": "Əlaqə",
+    "ru": "Контакты",
+    "en": "Contact us"
+  },
+  "nav_faq": {
+    "az": "Suallar",
+    "ru": "Вопросы",
+    "en": "FAQ"
   }
 }
