@@ -1,0 +1,187 @@
+{
+  "about_title": {
+    "az": "🌟 Biz kimik?",
+    "ru": "🌟 Кто мы?",
+    "en": "🌟 Who are we?"
+  },
+  "about_text": {
+    "az": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis.\n\n✅ Missiyamız: \n• Keyfiyyətli xidmət təqdim etmək \n• Müştəri məmnuniyyətini əsas tutmaq \n• Davamlı inkişaf və innovasiya \n• Peşəkar komandamızla etibarlı həllər",
+    "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis.\n\n✅ Наша миссия: \n• Предоставлять качественные услуги \n• Ставить во главу угла удовлетворенность клиентов \n• Постоянное развитие и инновации \n• Надежные решения с профессиональной командой",
+    "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis.\n\n✅ Our mission: \n• Provide quality service \n• Focus on customer satisfaction \n• Continuous development and innovation \n• Reliable solutions with our professional team"
+  },
+  "service_1_title": {
+    "az": "🔍 Mühəndis-geoloji tədqiqatlar",
+    "ru": "🔍 Инженерно-геологические исследования",
+    "en": "🔍 Engineering-geological investigations"
+  },
+  "service_1_text": {
+    "az": "Tikinti və infrastruktur layihələrində torpaq və süxur qatlarının quruluşunu öyrənmək üçün aparılan əsas araşdırmalardır.\nBu tədqiqatlar vasitəsilə ərazidə sürüşmə, çökmə və ya oturma kimi geoloji risklər öncədən müəyyən olunur.\nLayihənin yerləşdiriləcəyi torpaq növü, bərkliyi və nəmliyi kimi faktorlar tikintinin təhlükəsizliyinə birbaşa təsir göstərir.\nBiz ərazidə sahə işləri aparır, nümunələr götürür və nəticələri detallı şəkildə hesabat halında təqdim edirik.",
+    "ru": "Это основные исследования для изучения структуры почвы и пород на строительных и инфраструктурных объектах.\nС их помощью заранее определяются геологические риски, такие как оползни, просадки или оседания.\nТип почвы, её плотность и влажность напрямую влияют на безопасность строительства.\nМы проводим полевые работы, берем образцы и предоставляем подробные отчеты.",
+    "en": "These are fundamental studies to examine the structure of soil and rocks in construction and infrastructure projects.\nSuch research helps identify geological risks like landslides, subsidence, or settlement in advance.\nSoil type, hardness, and moisture directly affect construction safety.\nWe conduct fieldwork, take samples, and provide detailed reports."
+  },
+  "service_2_title": {
+    "az": "📊 Geotexniki hesabatların hazırlanması",
+    "ru": "📊 Подготовка геотехнических отчетов",
+    "en": "📊 Preparation of geotechnical reports"
+  },
+  "service_2_text": {
+    "az": "Geotexniki hesabat hər bir mühəndis layihəsi üçün texniki əsas rolunu oynayır.\nBu sənəd torpağın daşıma qabiliyyəti, yeraltı su səviyyəsi, süxur qatlarının dərinliyi kimi mühüm məlumatları ehtiva edir.\nHesabat əsasında bina və qurğuların bünövrə növü və konstruksiya tərzi müəyyən olunur.\nBiz bu hesabatları yerli normativlərə və beynəlxalq standartlara uyğun şəkildə tərtib edirik.",
+    "ru": "Геотехнический отчет играет ключевую роль для любого инженерного проекта.\nДокумент содержит важную информацию о несущей способности грунта, уровне грунтовых вод, глубине слоев пород.\nНа основе отчета определяется тип фундамента и конструкция зданий и сооружений.\nМы готовим отчеты в соответствии с местными и международными стандартами.",
+    "en": "A geotechnical report is a technical basis for every engineering project.\nIt contains important data such as soil bearing capacity, groundwater level, and depth of rock layers.\nThe report determines the type of foundation and construction method for buildings and structures.\nWe prepare these reports according to local regulations and international standards."
+  },
+  "service_3_title": {
+    "az": "🌋️ Seysmik risk analizi",
+    "ru": "🌋️ Анализ сейсмических рисков",
+    "en": "🌋️ Seismic risk analysis"
+  },
+  "service_3_text": {
+    "az": "Zəlzələ ehtimalı olan ərazilərdə tikinti üçün aparılan bu analizlər, obyektin davamlılığını və təhlükəsizliyini təmin etmək məqsədi daşıyır.\nAnalizlər zamanı sahənin seysmik aktivliyi, süxurların dalğa keçirmə qabiliyyəti və zəlzələ zamanı davranış forması müəyyən edilir.\nBu məlumatlar, layihənin zəlzələyə davamlı konstruksiyada icra olunması üçün əsasdır.\nBiz ərazinin seysmik tarixinə əsaslanan risk xəritələri və tövsiyələr hazırlayırıq.",
+    "ru": "Эти анализы проводятся для обеспечения устойчивости и безопасности объектов в сейсмоопасных районах.\nВ ходе анализа определяются сейсмическая активность участка, способность пород проводить волны и поведение при землетрясении.\nЭти данные необходимы для проектирования сейсмостойких конструкций.\nМы готовим карты рисков и рекомендации на основе сейсмической истории района.",
+    "en": "These analyses are carried out to ensure the durability and safety of structures in earthquake-prone areas.\nThe analysis determines the site's seismic activity, wave transmission capacity of rocks, and behavior during earthquakes.\nThis information is essential for earthquake-resistant construction.\nWe prepare risk maps and recommendations based on the seismic history of the area."
+  },
+  "service_4_title": {
+    "az": "🔬 Torpaq və süxur nümunələrinin laborator analizləri",
+    "ru": "🔬 Лабораторные анализы образцов почвы и пород",
+    "en": "🔬 Laboratory analysis of soil and rock samples"
+  },
+  "service_4_text": {
+    "az": "Sahədən götürülən torpaq və süxur nümunələri xüsusi laboratoriyalarda analiz edilir.\nBu analizlər torpağın sıxlığı, rütubəti, plastiklik həddi, sıxılma qabiliyyəti kimi mühəndis parametrlərini ortaya çıxarır.\nBeləliklə, layihə üçün ən uyğun torpaq emalı və əsaslandırma üsulları seçilir.\nBiz nümunələri yüksək dəqiqliklə təhlil edir, nəticələri texniki hesabatlarda əks etdiririk.",
+    "ru": "Образцы почвы и пород, взятые с участка, анализируются в специализированных лабораториях.\nЭти анализы выявляют инженерные параметры: плотность, влажность, предел пластичности, сжимаемость почвы.\nЭто позволяет выбрать оптимальные методы обработки и обоснования для проекта.\nМы проводим анализ с высокой точностью и отражаем результаты в технических отчетах.",
+    "en": "Soil and rock samples taken from the site are analyzed in specialized laboratories.\nThese analyses reveal engineering parameters such as density, moisture, plasticity limit, and compressibility.\nThus, the most suitable soil treatment and justification methods are selected for the project.\nWe analyze samples with high accuracy and reflect the results in technical reports."
+  },
+  "service_5_title": {
+    "az": "🌊 Yeraltı su araşdırmaları",
+    "ru": "🌊 Исследования подземных вод",
+    "en": "🌊 Groundwater investigations"
+  },
+  "service_5_text": {
+    "az": "Yeraltı sular torpaq stabilliyinə və tikintinin təhlükəsizliyinə birbaşa təsir edə bilər.\nBu xidmət çərçivəsində biz sızmalar, su səviyyələri, axın istiqamətləri və təzyiq zonalarını araşdırırıq.\nEyni zamanda, artezian quyuları üçün su ehtiyatlarının dəqiqləşdirilməsi də aparılır.\nBeləliklə, layihənin hidrologiyası aydın şəkildə müəyyən olunur və risklər minimallaşdırılır.",
+    "ru": "Подземные воды могут напрямую влиять на стабильность почвы и безопасность строительства.\nВ рамках этой услуги мы исследуем утечки, уровни воды, направления потоков и зоны давления.\nТакже уточняются запасы воды для артезианских скважин.\nТаким образом, гидрология проекта определяется четко, а риски минимизируются.",
+    "en": "Groundwater can directly affect soil stability and construction safety.\nWithin this service, we investigate leaks, water levels, flow directions, and pressure zones.\nWe also clarify water reserves for artesian wells.\nThus, the project's hydrology is clearly determined and risks are minimized."
+  },
+  "contact_title": {
+    "az": "Bizimlə əlaqə saxlayın",
+    "ru": "Свяжитесь с нами",
+    "en": "Contact us"
+  },
+  "contact_subtitle": {
+    "az": "Aşağıdakı formanı doldurun və biz sizə ən qısa zamanda cavab verəcəyik",
+    "ru": "Заполните форму ниже, и мы ответим вам в ближайшее время",
+    "en": "Fill out the form below and we will get back to you as soon as possible"
+  },
+  "contact_name_label": {
+    "az": "Adınız",
+    "ru": "Ваше имя",
+    "en": "Your name"
+  },
+  "contact_email_label": {
+    "az": "Email",
+    "ru": "Электронная почта",
+    "en": "Email"
+  },
+  "contact_message_label": {
+    "az": "Mətn",
+    "ru": "Сообщение",
+    "en": "Message"
+  },
+  "contact_submit": {
+    "az": "Göndər",
+    "ru": "Отправить",
+    "en": "Send"
+  },
+  "faq_title": {
+    "az": "Tez-tez verilən suallar",
+    "ru": "Часто задаваемые вопросы",
+    "en": "Frequently Asked Questions"
+  },
+  "faq_question_1": {
+    "az": "Geoloji tədqiqat nədir və nə üçün lazımdır?",
+    "ru": "Что такое геологические исследования и зачем они нужны?",
+    "en": "What is geological research and why is it needed?"
+  },
+  "faq_answer_1": {
+    "az": "Geoloji tədqiqat ərazidə torpaq və süxur qatlarının fiziki və mexaniki xüsusiyyətlərinin öyrənilməsidir. Bu tədqiqatlar tikinti layihələrinin dayanıqlı və təhlükəsiz olması üçün vacibdir. Əgər torpaq zəifdirsə və ya yeraltı su səviyyəsi yüksəkdirsə, bu layihəyə ciddi ziyan verə bilər.",
+    "ru": "Геологические исследования — это изучение физических и механических свойств почвы и пород на участке. Они необходимы для устойчивости и безопасности строительных проектов. Если почва слабая или уровень грунтовых вод высокий, это может серьезно навредить проекту.",
+    "en": "Geological research is the study of the physical and mechanical properties of soil and rocks on a site. This research is essential for the stability and safety of construction projects. If the soil is weak or the groundwater level is high, it can seriously damage the project."
+  },
+  "faq_question_2": {
+    "az": "Geoloji hesabat olmadan tikinti mümkündürmü?",
+    "ru": "Возможно ли строительство без геологического отчета?",
+    "en": "Is construction possible without a geological report?"
+  },
+  "faq_answer_2": {
+    "az": "Texniki cəhətdən mümkündür, lakin çox risklidir. Geoloji hesabat olmadan tikilən binalarda sonradan çökmə, çatlama və su problemləri yarana bilər. Qanunvericiliyə əsasən də iri tikililər üçün bu sənəd tələb olunur.",
+    "ru": "Технически возможно, но очень рискованно. В зданиях, построенных без геологического отчета, могут возникнуть просадки, трещины и проблемы с водой. По закону для крупных объектов этот документ обязателен.",
+    "en": "Technically it is possible, but very risky. Buildings constructed without a geological report may later experience subsidence, cracks, and water problems. According to the law, this document is required for large structures."
+  },
+  "faq_question_3": {
+    "az": "Geodeziya ilə topoqrafiya arasında fərq nədir?",
+    "ru": "В чем разница между геодезией и топографией?",
+    "en": "What is the difference between geodesy and topography?"
+  },
+  "faq_answer_3": {
+    "az": "Geodeziya böyük miqyaslı ölçmə və koordinatların təyini ilə məşğuldur, topoqrafiya isə sahənin relyefi və obyektlərin xəritələndirilməsidir. Bir növ geodeziya ümumi sistem verir, topoqrafiya isə onun içində detal yaradır.",
+    "ru": "Геодезия занимается крупномасштабными измерениями и определением координат, а топография — картированием рельефа и объектов участка. Геодезия дает общую систему, топография — детали внутри нее.",
+    "en": "Geodesy deals with large-scale measurements and determination of coordinates, while topography is mapping the relief and objects of the site. Geodesy provides the general system, topography creates details within it."
+  },
+  "faq_question_4": {
+    "az": "Səviyyələndirmə nə üçün aparılır?",
+    "ru": "Зачем проводится нивелирование?",
+    "en": "Why is leveling carried out?"
+  },
+  "faq_answer_4": {
+    "az": "Səviyyələndirmə ərazinin yüksəklik fərqlərinin müəyyən olunmasıdır. Bu proses tikinti zamanı bünövrənin düzgün oturdulması, suyun düzgün axması və torpaq həcmi hesablamaları üçün vacibdir.",
+    "ru": "Нивелирование — это определение перепадов высот на участке. Этот процесс важен для правильной укладки фундамента, отвода воды и расчета объема грунта при строительстве.",
+    "en": "Leveling is the determination of elevation differences on a site. This process is important for proper foundation placement, water drainage, and soil volume calculations during construction."
+  },
+  "faq_question_5": {
+    "az": "GNSS ölçmələri nə qədər dəqiq olur?",
+    "ru": "Насколько точны измерения GNSS?",
+    "en": "How accurate are GNSS measurements?"
+  },
+  "faq_answer_5": {
+    "az": "Müasir GNSS texnologiyaları ilə 1-2 sm dəqiqliklə koordinatlar əldə etmək mümkündür. Əgər RTK və ya statik üsullar tətbiq olunursa, dəqiqlik daha da artır.",
+    "ru": "Современные технологии GNSS позволяют получать координаты с точностью 1-2 см. При использовании RTK или статических методов точность еще выше.",
+    "en": "Modern GNSS technologies allow coordinates to be obtained with 1-2 cm accuracy. If RTK or static methods are used, the accuracy is even higher."
+  },
+  "faq_question_6": {
+    "az": "Geofiziki tədqiqatlar nəyə görə lazımdır?",
+    "ru": "Зачем нужны геофизические исследования?",
+    "en": "Why are geophysical studies needed?"
+  },
+  "faq_answer_6": {
+    "az": "Geofiziki üsullar qazma aparmadan yerin alt qatları haqqında məlumat verir. Bu, həm vaxta, həm də xərcə qənaət edir və potensial təhlükələri öncədən müəyyənləşdirməyə imkan yaradır.",
+    "ru": "Геофизические методы позволяют получать данные о подземных слоях без бурения. Это экономит время и деньги, а также помогает заранее выявить потенциальные опасности.",
+    "en": "Geophysical methods provide information about underground layers without drilling. This saves time and money and helps identify potential hazards in advance."
+  },
+  "faq_question_7": {
+    "az": "Dron ilə ölçmələr nə qədər dəqiqdir?",
+    "ru": "Насколько точны измерения с помощью дрона?",
+    "en": "How accurate are drone measurements?"
+  },
+  "faq_answer_7": {
+    "az": "Peşəkar dronlarla aparılan ölçmələr 2-5 sm dəqiqliklə nəticə verir. Bu üsul geniş ərazilər üçün sürətli və qənaətli ölçmə üsuludur.",
+    "ru": "Измерения, выполненные профессиональными дронами, дают точность 2-5 см. Этот метод быстрый и экономичный для больших территорий.",
+    "en": "Measurements made with professional drones provide 2-5 cm accuracy. This method is fast and cost-effective for large areas."
+  },
+  "language_switcher": {
+    "az": "Dil seçimi",
+    "ru": "Выбор языка",
+    "en": "Language selection"
+  },
+  "az_language": {
+    "az": "Azərbaycanca (AZ)",
+    "ru": "Азербайджанский (AZ)",
+    "en": "Azerbaijani (AZ)"
+  },
+  "ru_language": {
+    "az": "Rus dili (RU)",
+    "ru": "Русский (RU)",
+    "en": "Russian (RU)"
+  },
+  "en_language": {
+    "az": "İngilis dili (EN)",
+    "ru": "Английский (EN)",
+    "en": "English (EN)"
+  }
+}

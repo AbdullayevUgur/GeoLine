@@ -90,3 +90,36 @@ class LanguageSwitcher {
 document.addEventListener('DOMContentLoaded', () => {
     new LanguageSwitcher();
 });
+
+// Load translations
+let translations = {};
+fetch('translations.json')
+    .then(response => response.json())
+    .then(data => {
+        translations = data;
+        setLanguage(getCurrentLanguage());
+    });
+
+function setLanguage(lang) {
+    document.querySelectorAll('[data-translate]').forEach(el => {
+        const key = el.getAttribute('data-translate');
+        if (translations[key] && translations[key][lang]) {
+            el.textContent = translations[key][lang];
+        }
+    });
+}
+
+function getCurrentLanguage() {
+    // Example: get from URL or default to 'az'
+    const params = new URLSearchParams(window.location.search);
+    return params.get('lang') || 'az';
+}
+
+// Add event listeners to language buttons
+document.querySelectorAll('.language-option').forEach(btn => {
+    btn.addEventListener('click', e => {
+        const lang = btn.getAttribute('data-lang');
+        setLanguage(lang);
+        // Optionally update URL or save to localStorage
+    });
+});
