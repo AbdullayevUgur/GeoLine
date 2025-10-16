@@ -2226,10 +2226,3 @@ a:focus {
     color: #ffffff;
 }
 
-@media (max-width: 768px) {
-    .footer .copyright p,
-    .footer .copyright .col-md-6:last-child p {
-        margin: 5px 0;
-        text-align: center;
-    }
-}
