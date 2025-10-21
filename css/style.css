@@ -78,32 +78,50 @@ a:focus {
 .top-bar {
     position: relative;
     height: 90px;
-    background: #fdbe33;
+    background: #030f27;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* чтобы справа иконки стояли */
+    padding: 0 20px;
 }
 
 .top-bar .logo {
-    padding: 15px 0;
-    text-align: left;
-    overflow: hidden;
-}
-
-.top-bar .logo h1 {
-    margin: 0;
-    color: #030f27;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
 }
 
 .top-bar .logo img {
-    max-width: 100%;
-    max-height: 60px;
+    height: 80px;
+    width: auto;
 }
 
+.top-bar .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.top-bar .logo-top {
+    font-size: 35px; /* лучше так, чтобы совпадало визуально */
+    font-weight: 700;
+    color: #d4af37;
+}
+
+.top-bar .logo-bottom {
+    font-size: 22px;
+    font-weight: 500;
+    color: #d4af37;
+    margin-top: 3px;
+}
+
+/* Правый блок */
 .top-bar .top-bar-item {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 15px;
 }
 
 .top-bar .top-bar-icon {
@@ -112,6 +130,7 @@ a:focus {
     align-items: center;
     justify-content: center;
 }
+
 
 .top-bar .top-bar-icon [class^="flaticon-"]::before {
     margin: 0;
@@ -125,14 +144,14 @@ a:focus {
 
 .top-bar .top-bar-text h3 {
     margin: 0 0 5px 0;
-    color: #030f27;
+    color: #ffd700;
     font-size: 16px;
     font-weight: 400;
 }
 
 .top-bar .top-bar-text p {
     margin: 0;
-    color: #030f27;
+    color: #ffd700;
     font-size: 13px;
     font-weight: 400;
 }
@@ -155,7 +174,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #fdbe33;
+    background: #030f27;
     transition: .3s;
 }
 
@@ -259,7 +278,7 @@ a:focus {
 .carousel {
     position: relative;
     width: 100%;
-    height: calc(100vh - 170px);
+    height: calc(100vh - 250px);
     min-height: 400px;
     margin: 0 auto;
     text-align: center;
@@ -2224,5 +2243,32 @@ a:focus {
 
 .footer .copyright p a:hover {
     color: #ffffff;
+}
+
+/* Плавающая WhatsApp кнопка */
+.whatsapp-float {
+    position: fixed;
+    bottom: 22px;
+    right: 85px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float img {
+    width: 34px;
+    height: 34px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
