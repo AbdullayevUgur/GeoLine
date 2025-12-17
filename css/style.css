@@ -748,10 +748,13 @@ a:focus {
 .service .service-img {
     position: relative;
     overflow: hidden;
+    height: 300px;
 }
 
 .service .service-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .service .service-overlay {
@@ -1860,10 +1863,13 @@ a:focus {
 .portfolio .portfolio-img {
     position: relative;
     overflow: hidden;
+    height: 300px;
 }
 
 .portfolio .portfolio-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: .3s;
 }
 
