@@ -416,15 +416,7 @@ a:focus {
     padding-bottom: 5px;
 }
 
-.page-header h2::after {
-    position: absolute;
-    content: "";
-    width: 100px;
-    height: 2px;
-    left: calc(50% - 50px);
-    bottom: 0;
-    background: #030f27;
-}
+
 
 .page-header a {
     position: relative;
