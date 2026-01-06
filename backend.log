@@ -1,0 +1,187 @@
+INFO:     Will watch for changes in these directories: ['/Users/ugur/IdeaProjects/builerz-master/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [4005] using WatchFiles
+INFO:     Started server process [4009]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:49645 - "OPTIONS /api/auth/login/json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49645 - "POST /api/auth/login/json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49645 - "OPTIONS /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49647 - "GET /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49647 - "OPTIONS /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49645 - "OPTIONS /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49647 - "OPTIONS /api/portfolio?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49650 - "OPTIONS /api/contact/submissions?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49652 - "OPTIONS /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49654 - "OPTIONS /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49647 - "OPTIONS /api/portfolio?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49652 - "OPTIONS /api/contact/submissions?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49645 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49655 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49650 - "GET /api/portfolio?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49654 - "GET /api/contact/submissions?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49645 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49655 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49650 - "GET /api/portfolio?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49654 - "GET /api/contact/submissions?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49654 - "OPTIONS /api/services?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49650 - "GET /api/services?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49667 - "GET /uploads/services/64128911-ddb1-4a70-bb86-886483fc9e98.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49659 - "GET /uploads/services/1f1f9860-93cb-40c3-b616-c730ee81c1fe.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49665 - "GET /uploads/services/57f62d44-e1b4-4118-b20c-8c9288387d30.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49660 - "GET /uploads/services/56a81c35-e49c-41e4-ba38-73fc27f84a7b.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49666 - "GET /uploads/services/81c530ad-339c-4d41-af8a-975f8bfd7db6.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49661 - "GET /uploads/services/f3c002c5-ae95-44d4-ab37-dfe9b78b8bde.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49661 - "GET /uploads/services/service-4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49650 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49661 - "GET /uploads/services/4700368f-fbd5-4e27-a039-9393feade9b4.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49666 - "GET /uploads/services/ade116ce-0bd8-45eb-9666-17c1acbae8fe.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49667 - "GET /uploads/services/5e9c0da3-2ba0-4eb8-a5bb-4490ba67af74.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49665 - "GET /uploads/services/cf8ae862-7856-44cf-93f7-26b9f3d79e19.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49660 - "GET /uploads/services/9341b99b-6fd2-4449-a6ff-8eb1d31ff365.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49661 - "GET /uploads/services/b7827b6a-d69d-4832-bae3-1176d7c81f9d.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49666 - "GET /uploads/services/fc4cc8ab-844c-47de-8695-825e9b48b37e.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49665 - "GET /uploads/services/e3177b1a-8a55-49e6-93d1-63942617ab15.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49661 - "GET /uploads/services/730cb74e-ee1d-4b6c-aa86-5db0bb8fa58e.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49667 - "GET /uploads/services/678017d6-ef91-45a3-913b-020cd7695ab4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49660 - "GET /uploads/services/a05d31fc-30ab-4edc-b5ed-d749d82b6492.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49661 - "GET /uploads/services/videos/ee3fc64c-3caf-46e1-8c70-3195a025409a.mov HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49672 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49676 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49677 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49679 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49681 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49682 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49685 - "GET /uploads/carousel/carousel-4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49686 - "GET /uploads/carousel/8417c6d8-41a0-4aa2-8f2f-631c487227c2.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49688 - "GET /uploads/carousel/d8974f59-2727-4c2a-b80a-9cc6a7cf2ae4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49690 - "GET /uploads/carousel/4ad071d4-25ed-4b8e-847f-c8c5dd72330f.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49692 - "GET /uploads/carousel/499d4d58-ce79-4145-81ed-5d33ac8db9b9.webp HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49692 - "GET /uploads/blog/azure1.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49690 - "GET /uploads/blog/azure2.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49688 - "GET /uploads/blog/nardaran1.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49686 - "GET /uploads/about/flametowers.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49682 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50109 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50111 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50113 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50115 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50117 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50118 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50251 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50253 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50255 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50257 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50259 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50260 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50328 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50330 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50332 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50334 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50335 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50338 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50338 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50345 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50347 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50348 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50351 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50352 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50352 - "OPTIONS /api/carousel?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50351 - "GET /api/carousel?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50363 - "OPTIONS /api/services?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50363 - "GET /api/services?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50365 - "OPTIONS /api/faqs?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50365 - "GET /api/faqs?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50365 - "OPTIONS /api/about?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50370 - "GET /api/about?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50370 - "OPTIONS /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50365 - "OPTIONS /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50370 - "OPTIONS /api/portfolio?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50373 - "OPTIONS /api/contact/submissions?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50374 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50365 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50376 - "GET /api/portfolio?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50370 - "GET /api/contact/submissions?unread_only=true HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50370 - "OPTIONS /api/contact/info?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50376 - "GET /api/contact/info?active_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50376 - "OPTIONS /api/contact/submissions?unread_only=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50370 - "GET /api/contact/submissions?unread_only=false HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50435 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50438 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50440 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50442 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50444 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50445 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50445 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50531 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50541 - "GET /api/licenses?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50544 - "GET /uploads/licenses/license1.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50545 - "GET /uploads/licenses/5cfc2a28-fece-4da7-99a0-6eeb8e4d872a.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50541 - "GET /api/portfolio?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50544 - "GET /uploads/portfolio/nardaran1.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50545 - "GET /uploads/portfolio/azure2.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50547 - "GET /uploads/portfolio/azure1.jpeg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50550 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50551 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50554 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50556 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50558 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50559 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51183 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51186 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51188 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51192 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51190 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51193 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51295 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51297 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51299 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51301 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51303 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51304 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51306 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51326 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51326 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51326 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51329 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51331 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51332 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51335 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51336 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51353 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51354 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51357 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51359 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51361 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51362 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51378 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51381 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51380 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51383 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51385 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51386 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51915 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51916 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51919 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51921 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51923 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51924 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54688 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54690 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54693 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54695 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54696 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54698 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54717 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54719 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54721 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54723 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54725 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54726 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54731 - "GET /api/carousel?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54733 - "GET /api/services?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54736 - "GET /api/blog?published_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54738 - "GET /api/statistics?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54740 - "GET /api/about?active_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54741 - "GET /api/faqs?active_only=true HTTP/1.1" 200 OK

@@ -65,7 +65,7 @@
         console.log($videoSrc);
 
         $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+            $("#video").attr('src', $videoSrc + "?autoplay=1&muted=1&modestbranding=1&showinfo=0");
         })
 
         $('#videoModal').on('hide.bs.modal', function (e) {
@@ -121,16 +121,57 @@
     
     
     // Portfolio isotope and filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
+    // Only initialize if portfolio container exists and hasn't been dynamically loaded yet
+    // (frontend.js will handle initialization for portfolio.html page)
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    if (currentPage !== 'portfolio.html') {
+        var portfolioIsotope = $('.portfolio-container').isotope({
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows'
+        });
 
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('filter-active');
-        $(this).addClass('filter-active');
+        $('#portfolio-flters li').on('click', function () {
+            $("#portfolio-flters li").removeClass('filter-active');
+            $(this).addClass('filter-active');
 
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
+            portfolioIsotope.isotope({filter: $(this).data('filter')});
+        });
+    }
+    
+    
+    // Partners Slider
+    $(document).ready(function() {
+        if ($('.partners-slider').length) {
+            $('.partners-slider').slick({
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: false,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+        }
     });
     
 })(jQuery);

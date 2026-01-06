@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoLine CMS - Admin Paneli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page" class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h2><i class="fas fa-building"></i> GeoLine CMS</h2>
+                <p>Məzmun İdarəetmə Sistemi</p>
+            </div>
+            <form id="login-form">
+                <div class="mb-3">
+                    <label for="username" class="form-label">İstifadəçi adı</label>
+                    <input type="text" class="form-control" id="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Şifrə</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <div id="login-error" class="alert alert-danger d-none"></div>
+                <button type="submit" class="btn btn-primary w-100">
+                    <i class="fas fa-sign-in-alt"></i> Giriş
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="d-none">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h3><i class="fas fa-building"></i> GeoLine CMS</h3>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" data-section="dashboard"><i class="fas fa-home"></i> İdarə Paneli</a></li>
+                <li><a href="#" data-section="carousel"><i class="fas fa-images"></i> Karusel</a></li>
+                <li><a href="#" data-section="services"><i class="fas fa-briefcase"></i> Xidmətlər</a></li>
+                <li><a href="#" data-section="portfolio"><i class="fas fa-folder-open"></i> Portfolyo</a></li>
+                <li><a href="#" data-section="blog"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="#" data-section="faqs"><i class="fas fa-question-circle"></i> Suallar</a></li>
+                <li><a href="#" data-section="about"><i class="fas fa-info-circle"></i> Haqqında</a></li>
+                <li><a href="#" data-section="contact"><i class="fas fa-envelope"></i> Əlaqə</a></li>
+                <li><a href="#" data-section="statistics"><i class="fas fa-chart-bar"></i> Statistika</a></li>
+                <li><a href="#" data-section="partners"><i class="fas fa-handshake"></i> Tərəfdaşlar</a></li>
+                <li><a href="#" data-section="licenses"><i class="fas fa-certificate"></i> Lisenziyalar</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <button id="logout-btn" class="btn btn-outline-danger w-100">
+                    <i class="fas fa-sign-out-alt"></i> Çıxış
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <h4 id="page-title">İdarə Paneli</h4>
+                <div class="user-info">
+                    <span id="current-user"></span>
+                </div>
+            </header>
+
+            <!-- Content Sections -->
+            <div class="content-wrapper">
+                <!-- Dashboard Section -->
+                <section id="section-dashboard" class="content-section">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="stat-card">
+                                <div class="stat-icon bg-primary">
+                                    <i class="fas fa-images"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3 id="stat-carousel">0</h3>
+                                    <p>Karusel Slaydları</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-card">
+                                <div class="stat-icon bg-success">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3 id="stat-services">0</h3>
+                                    <p>Xidmətlər</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-card">
+                                <div class="stat-icon bg-info">
+                                    <i class="fas fa-folder-open"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3 id="stat-portfolio">0</h3>
+                                    <p>Portfolyo Layihələri</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-card">
+                                <div class="stat-icon bg-warning">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3 id="stat-contacts">0</h3>
+                                    <p>Əlaqə Müraciətləri</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Carousel Section -->
+                <section id="section-carousel" class="content-section d-none">
+                    <div class="section-header">
+                        <h5>Karusel Slaydları</h5>
+                        <button class="btn btn-primary" onclick="openCarouselModal()">
+                            <i class="fas fa-plus"></i> Slayd Əlavə Et
+                        </button>
+                    </div>
+                    <div id="carousel-list" class="content-list"></div>
+                </section>
+
+                <!-- Services Section -->
+                <section id="section-services" class="content-section d-none">
+                    <div class="section-header">
+                        <h5>Xidmətlər</h5>
+                        <button class="btn btn-primary" onclick="openServiceModal()">
+                            <i class="fas fa-plus"></i> Xidmət Əlavə Et
+                        </button>
+                    </div>
+                    <div id="services-list" class="content-list"></div>
+                </section>
+
+                <!-- Portfolio Section -->
+                <section id="section-portfolio" class="content-section d-none">
+                    <div class="section-header">
+                        <h5>Portfolyo Layihələri</h5>
+                        <button class="btn btn-primary" onclick="openPortfolioModal()">
+                            <i class="fas fa-plus"></i> Layihə Əlavə Et
+                        </button>
+                    </div>
+                    <div id="portfolio-list" class="content-list"></div>
+                </section>
+
+                <!-- Blog Section -->
+                <section id="section-blog" class="content-section d-none">
+                    <div class="section-header">
+                        <h5>Blog Yazıları</h5>
+                        <button class="btn btn-primary" onclick="openBlogModal()">
+                            <i class="fas fa-plus"></i> Yazı Əlavə Et
+                        </button>
+                    </div>
+                    <div id="blog-list" class="content-list"></div>
+                </section>
+
+                <!-- FAQs Section -->
+                <section id="section-faqs" class="content-section d-none">
+                    <div class="section-header">
+                        <h5>Suallar</h5>
+                        <button class="btn btn-primary" onclick="openFAQModal()">
+                            <i class="fas fa-plus"></i> Sual Əlavə Et
+                        </button>
+                    </div>
+                    <div id="faqs-list" class="content-list"></div>
+                </section>
+
+                <!-- About Section -->
+                <section id="section-about" class="content-section d-none">
+                    <div class="section-header">
+                        <h5>Haqqında Məzmunu</h5>
+                        <button class="btn btn-primary" onclick="openAboutModal()">
+                            <i class="fas fa-plus"></i> Məzmun Əlavə Et
+                        </button>
+                    </div>
+                    <div id="about-list" class="content-list"></div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="section-contact" class="content-section d-none">
+                    <div class="section-header">
+                        <h5>Əlaqə Məlumatları və Müraciətlər</h5>
+                    </div>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#contact-info">Əlaqə Məlumatları</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#contact-submissions">Müraciətlər</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="contact-info" class="tab-pane fade show active">
+                            <div class="section-header mt-3">
+                                <button class="btn btn-primary" onclick="openContactInfoModal()">
+                                    <i class="fas fa-plus"></i> Əlaqə Məlumatı Əlavə Et
+                                </button>
+                            </div>
+                            <div id="contact-info-list" class="content-list"></div>
+                        </div>
+                        <div id="contact-submissions" class="tab-pane fade">
+                            <div id="contact-submissions-list" class="content-list"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Statistics Section -->
+                <section id="section-statistics" class="content-section d-none">
+                    <div class="section-header">
+                        <h5>Statistika</h5>
+                        <button class="btn btn-primary" onclick="openStatisticModal()">
+                            <i class="fas fa-plus"></i> Statistika Əlavə Et
+                        </button>
+                    </div>
+                    <div id="statistics-list" class="content-list"></div>
+                </section>
+
+                <!-- Partners Section -->
+                <section id="section-partners" class="content-section d-none">
+                    <div class="section-header">
+                        <h5>Tərəfdaşlar</h5>
+                        <button class="btn btn-primary" onclick="openPartnerModal()">
+                            <i class="fas fa-plus"></i> Tərəfdaş Əlavə Et
+                        </button>
+                    </div>
+                    <div id="partners-list" class="content-list"></div>
+                </section>
+
+                <!-- Licenses Section -->
+                <section id="section-licenses" class="content-section d-none">
+                    <div class="section-header">
+                        <h5>Lisenziyalar</h5>
+                        <button class="btn btn-primary" onclick="openLicenseModal()">
+                            <i class="fas fa-plus"></i> Lisenziya Əlavə Et
+                        </button>
+                    </div>
+                    <div id="licenses-list" class="content-list"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals will be dynamically generated -->
+    <div id="modals-container"></div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 9999;">
+        <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto" id="toast-title">Bildiriş</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="toast-message"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
+

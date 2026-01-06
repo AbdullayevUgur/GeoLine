@@ -35,10 +35,10 @@
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
-                                <img src="img/logo2-round.png" alt="logo" class="logo-img">
+                                <img src="img/logo-round.png" alt="logo" class="logo-img">
 
                                 <div class="logo-text">
-                                    <span class="logo-top">GeoLine</span>
+                                    <span class="logo-top">GEOLINE</span>
                                     <span class="logo-bottom">Engineering</span>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                                             <i class="flaticon-call"></i>
                                         </div>
                                         <div class="top-bar-text">
-                                            <h3>Əlaqə</h3>
+                                            <h3>WhatsApp Əlaqə</h3>
                                             <p>+994 55 411 04 54</p>
                                         </div>
                                     </div>
@@ -97,7 +97,6 @@
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
                                 <a href="index.html" class="nav-item nav-link">Əsas</a>
-                                <a href="about.html" class="nav-item nav-link">Haqqımızda</a>
                                 <a href="service.html" class="nav-item nav-link">Xidmətlər</a>
                                 <a href="team.html" class="nav-item nav-link">Lisenziya</a>
                                 <a href="portfolio.html" class="nav-item nav-link">Layihələrimiz</a>
@@ -149,13 +148,7 @@
                                         <p>123 Street, Baku, Azerbaijan</p>
                                     </div>
                                 </div>
-                                <div class="contact-item">
-                                    <i class="flaticon-call"></i>
-                                    <div class="contact-text">
-                                        <h2>Phone</h2>
-                                        <p>+123 456 789</p>
-                                    </div>
-                                </div>
+                                
                                 <div class="contact-item">
                                     <i class="flaticon-send-mail"></i>
                                     <div class="contact-text">
@@ -168,25 +161,25 @@
                         <div class="col-md-6">
                             <div class="contact-form">
                                 <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <form name="sentMessage" id="contactForm">
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <input type="text" class="form-control" id="name" placeholder="Adınız" required="required" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <input type="email" class="form-control" id="email" placeholder="E-poçt ünvanınız" required="required" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <input type="text" class="form-control" id="subject" placeholder="Mövzu" required="required" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <textarea class="form-control" id="message" placeholder="Mesajınız" required="required" rows="5"></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                        <button class="btn" type="submit" id="sendMessageButton">Mesaj Göndər</button>
                                     </div>
                                 </form>
                             </div>
@@ -276,11 +269,41 @@
         <script src="lib/slick/slick.min.js"></script>
         
         <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+        <!-- Old PHP-based contact.js removed - using API-based form submission instead -->
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        
+        <!-- Frontend API Integration -->
+        <script src="js/api-client.js"></script>
+        <script src="js/frontend.js"></script>
+        
+        <!-- Debug script to verify form setup -->
+        <script>
+            // Wait for everything to load, then check form status
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    const form = document.getElementById('contactForm');
+                    const apiClient = typeof frontendAPI !== 'undefined' ? '✅ Available' : '❌ Not Available';
+                    const formHandler = form && form.dataset.listenerAttached === 'true' ? '✅ Attached' : '❌ Not Attached';
+                    
+                    console.log('=== Contact Form Status ===');
+                    console.log('Form element:', form ? '✅ Found' : '❌ Not Found');
+                    console.log('API Client:', apiClient);
+                    console.log('Form Handler:', formHandler);
+                    console.log('Backend URL:', typeof frontendAPI !== 'undefined' ? frontendAPI.baseURL : 'N/A');
+                    console.log('========================');
+                    
+                    // Show status in page if form not working
+                    if (!form || form.dataset.listenerAttached !== 'true' || typeof frontendAPI === 'undefined') {
+                        const successDiv = document.getElementById('success');
+                        if (successDiv) {
+                            successDiv.innerHTML = '<div class="alert alert-warning">Form yüklənir... Əgər problem varsa, səhifəni yeniləyin.</div>';
+                        }
+                    }
+                }, 500);
+            });
+        </script>
 
         <a href="https://wa.me/994554110454" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
             <img src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="WhatsApp">

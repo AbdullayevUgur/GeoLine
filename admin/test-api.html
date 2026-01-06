@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>API Connection Test</h1>
+    <button onclick="testAPI()">Test API Connection</button>
+    <div id="result"></div>
+    
+    <script>
+        async function testAPI() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Testing...';
+            
+            try {
+                // Test 1: Health check
+                console.log('Test 1: Health check');
+                const healthResponse = await fetch('http://localhost:8000/health');
+                const healthData = await healthResponse.json();
+                console.log('Health:', healthData);
+                
+                // Test 2: Login
+                console.log('Test 2: Login');
+                const loginResponse = await fetch('http://localhost:8000/api/auth/login/json', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        username: 'admin',
+                        password: 'admin123'
+                    })
+                });
+                
+                console.log('Login status:', loginResponse.status);
+                const loginData = await loginResponse.json();
+                console.log('Login response:', loginData);
+                
+                resultDiv.innerHTML = `
+                    <h2>Results:</h2>
+                    <p><strong>Health Check:</strong> ${JSON.stringify(healthData)}</p>
+                    <p><strong>Login Status:</strong> ${loginResponse.status}</p>
+                    <p><strong>Login Response:</strong> ${JSON.stringify(loginData)}</p>
+                `;
+            } catch (error) {
+                console.error('Error:', error);
+                resultDiv.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
+

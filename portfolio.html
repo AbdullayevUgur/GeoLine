@@ -35,10 +35,10 @@
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
-                                <img src="img/logo2-round.png" alt="logo" class="logo-img">
+                                <img src="img/logo-round.png" alt="logo" class="logo-img">
 
                                 <div class="logo-text">
-                                    <span class="logo-top">GeoLine</span>
+                                    <span class="logo-top">GEOLINE</span>
                                     <span class="logo-bottom">Engineering</span>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                                             <i class="flaticon-call"></i>
                                         </div>
                                         <div class="top-bar-text">
-                                            <h3>Əlaqə</h3>
+                                            <h3>WhatsApp Əlaqə</h3>
                                             <p>+994 55 411 04 54</p>
                                         </div>
                                     </div>
@@ -97,7 +97,6 @@
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
                                 <a href="index.html" class="nav-item nav-link">Əsas</a>
-                                <a href="about.html" class="nav-item nav-link">Haqqımızda</a>
                                 <a href="service.html" class="nav-item nav-link">Xidmətlər</a>
                                 <a href="team.html" class="nav-item nav-link">Lisenziya</a>
                                 <a href="portfolio.html" class="nav-item nav-link active">Layihələrimiz</a>
@@ -255,6 +254,58 @@
                 </div>
             </div>
             <!-- Portfolio End -->
+            
+            
+            <!-- Service Video Modal Start -->
+            <div class="modal fade" id="serviceVideoModal" tabindex="-1" role="dialog" aria-labelledby="serviceVideoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>        
+                            <!-- Video container - will show either iframe or video element -->
+                            <div class="embed-responsive embed-responsive-16by9" id="serviceVideoContainer">
+                                <iframe class="embed-responsive-item" src="" id="serviceVideoIframe" allowscriptaccess="always" allow="autoplay; encrypted-media; fullscreen" style="display:none; border:0;"></iframe>
+                                <video class="embed-responsive-item" id="serviceVideoPlayer" controls autoplay muted loop playsinline webkit-playsinline style="display:none; width:100%; height:100%; object-fit:contain; background:#000;"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Video Modal End -->
+
+
+            <!-- Partners Start -->
+            <div class="partners wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Bizim Tərəfdaşlarımız</p>
+                        <h2>Our Partners</h2>
+                    </div>
+                    <div class="partners-slider">
+                        <div class="partner-item">
+                            <img src="img/kolida.jpeg" alt="Partner">
+                        </div>
+                        <div class="partner-item">
+                            <img src="img/partner-2.png" alt="Partner">
+                        </div>
+                        <div class="partner-item">
+                            <img src="img/partner-3.png" alt="Partner">
+                        </div>
+                        <div class="partner-item">
+                            <img src="img/partner-4.png" alt="Partner">
+                        </div>
+                        <div class="partner-item">
+                            <img src="img/partner-5.png" alt="Partner">
+                        </div>
+                        <div class="partner-item">
+                            <img src="img/partner-6.png" alt="Partner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Partners End -->
 
 
             <!-- Footer Start -->
@@ -337,6 +388,10 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        
+        <!-- Frontend API Integration -->
+        <script src="js/api-client.js"></script>
+        <script src="js/frontend.js"></script>
         
         <a href="https://wa.me/994554110454" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
             <img src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="WhatsApp">
